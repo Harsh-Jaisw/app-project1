@@ -27,6 +27,7 @@ const RouterPart = () => {
                     <Route exact path="/signup">
                         <SignUp />
                     </Route>
+                    
                 </Switch>
             </Router>
         </>

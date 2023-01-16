@@ -6,6 +6,7 @@ function Login() {
     const [password, setPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false);
     const [message1, setMessage1] = useState("");
+
     const userName = localStorage.getItem("name")
         ? localStorage.getItem("name") : "AdminBoy"
     const userPassword = localStorage.getItem("password")
@@ -18,6 +19,7 @@ function Login() {
             alert("User not found!")
         }
     };
+    
     const toggleShowPassword = () => {
         setShowPassword(!showPassword);
     };
